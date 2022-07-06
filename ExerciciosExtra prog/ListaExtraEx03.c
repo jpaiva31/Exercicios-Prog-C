@@ -1,3 +1,8 @@
+/*. Faça um programa que leia um número real x e calcule o valor de f(x) = √
+x+ (x/2) +x
+x
+*/
+
 #include <stdio.h>
 #include <math.h>
 
