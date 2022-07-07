@@ -4,10 +4,9 @@ int main()
 {
     int n;
 
-    printf("Escolha seu prato\n1-Tacos\n2-Enchiladas Suizas\n3-Enchiladas verdes\n4-Tostadas\n5-Sair\n");
-
     while(n!=5)
-    {
+    {    
+        printf("Escolha seu prato\n1-Tacos\n2-Enchiladas Suizas\n3-Enchiladas verdes\n4-Tostadas\n5-Sair\n");
         scanf("%d",&n);
         if(n==5)
         {
