@@ -6,6 +6,7 @@ int main()
 {
     int n,aux=0;
     char a[100], menor[100];
+    printf("Digite, respectivamente, a idade e o nome");
     scanf("%d",&n);
     aux=n;
     scanf("%s", menor);
