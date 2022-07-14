@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1614575143 source:c:\users\alonenotsusin\desktop\exercicios\tabela periodica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<locale.h>
+	<string.h>
+
+1614817655 source:c:\users\alonenotsusin\desktop\quimica\tabela periodica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<locale.h>
+	<string.h>
+
+1614866253 source:c:\users\alonenotsusin\desktop\quimica\tabela periodica (1)\tabela periodica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<locale.h>
+	<string.h>
+
+1616899257 source:c:\users\alonenotsusin\desktop\quimica a\aps\tabela periodica (1)\tabela periodica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<locale.h>
+	<string.h>
+
