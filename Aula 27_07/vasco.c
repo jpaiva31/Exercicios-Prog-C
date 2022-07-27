@@ -33,7 +33,7 @@ for(int i=0;i<n;i++){
 }
 return m;
 }
-int media(int vet[],int n){
+float media(int vet[],int n){
 float m=0;
 for(int i=0;i<n;i++)m+=vet[i];
 m=m/n;
@@ -48,7 +48,7 @@ ler(vet,n);
 imprimir(vet,n);
 printf("O maior numero eh %d\n", maior(vet,n));
 printf("O menor numero eh %d\n", menor(vet,n));
-printf("A media dos numeros eh %d\n", media(vet,n));
+printf("A media dos numeros eh %.2f\n", media(vet,n));
 zerar(vet,n);
 return 0;
 }
