@@ -1,6 +1,6 @@
-/* 1º f)Dado um número inteiro, escrever o mesmo em código Morse. O código
+/* 1Âº f)Dado um nÃºmero inteiro, escrever o mesmo em cÃ³digo Morse. O cÃ³digo
 Morse deve ser fornecido na mesma ordem dos caracteres digitados. Utilize o
-programa que calcula o logaritmo de 10 para auxiliá­lo nesta tarefa !
+programa que calcula o logaritmo de 10 para auxiliÃ¡Â­lo nesta tarefa !
 */
 #include <stdio.h>
 #include <string.h>
@@ -8,6 +8,7 @@ programa que calcula o logaritmo de 10 para auxiliá­lo nesta tarefa !
 
 int logaritmo(int a){
 int cont=0;
+if(a==0)cont++;
 while(a>=1){
     a=a/10;
     cont++;
@@ -35,11 +36,11 @@ int main(){
 int a;
 printf("Digite um numero:");
 scanf("%d", &a);
-for(int i=0;a>=1;i++){
+int aux=a;
+for(int i=0;i<logaritmo(aux);i++){
     Morse((a)/(int)pow(10,(logaritmo(a)-1)));
     a=a%(int)pow(10,(logaritmo(a)-1));
 }
 
 return 0;
 }
-
