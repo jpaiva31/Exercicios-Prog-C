@@ -1,5 +1,5 @@
-/*Fac¸a um programa que leia dois vetores de 10 elementos. Crie um vetor que seja a uniao˜
-entre os 2 vetores anteriores, ou seja, que contem os n ´ umeros dos dois vetores. N ´ ao˜
+/*FacÂ¸a um programa que leia dois vetores de 10 elementos. Crie um vetor que seja a uniaoËœ
+entre os 2 vetores anteriores, ou seja, que contem os n Â´ umeros dos dois vetores. N Â´ aoËœ
 deve conter numeros repetidos.*/
 #include <stdio.h>
 int checa(int vetor[20],int n)
@@ -18,6 +18,7 @@ int main()
     {
         scanf("%d", &vetor1[i]);
     }
+    printf("Digite o segundo vetor:\n");
     for(int i=0; i<10; i++)
     {
         scanf("%d", &vetor2[i]);
