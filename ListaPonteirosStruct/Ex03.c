@@ -1,5 +1,5 @@
 /* 3. Suponha que criamos uma estrutura para armazenar dados de pessoas e um vetor para armazenar
-dados de v·rias pessoas:
+dados de v√°rias pessoas:
 struct Pessoa{
 int rg;
 int cpf;
@@ -7,9 +7,9 @@ char nome[80];
 };
 struct Pessoa cadastro[100];
 
-Suponha que o vetor esteja ordenado em ordem crescente por valor de RG. Implemente uma funÁ„o
-de busca por RG, que opera como a busca bin·ria, e que caso exista uma pessoa no cadastro com o
-RG a ser buscado, devolve o Ìndice deste cadastro e caso n„o exista o RG a ser buscado, devolve -1
+Suponha que o vetor esteja ordenado em ordem crescente por valor de RG. Implemente uma fun√ß√£o
+de busca por RG, que opera como a busca bin√°ria, e que caso exista uma pessoa no cadastro com o
+RG a ser buscado, devolve o √≠ndice deste cadastro e caso n√£o exista o RG a ser buscado, devolve -1
 */
 #include <stdio.h>
 #include <string.h>
@@ -36,7 +36,6 @@ int busca(struct Pessoa vetor[],int num, int tam){
             else
                 n=(max+1+min)/2;
         }
-        printf("min: %d  max: %d  n: %d\n", min,max,n);
     }
     return -1;
 }
