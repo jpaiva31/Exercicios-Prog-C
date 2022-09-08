@@ -1,5 +1,5 @@
-/*Faça um programa que receba dois arquivos do usuário, e crie um terceiro arquivo com o
-conteúdo dos dois primeiros juntos (o conteúdo do primeiro seguido do conteúdo do segundo).*/
+/*FaÃ§a um programa que receba dois arquivos do usuÃ¡rio, e crie um terceiro arquivo com o
+conteÃºdo dos dois primeiros juntos (o conteÃºdo do primeiro seguido do conteÃºdo do segundo).*/
 
 #include <stdio.h>
 #include <string.h>
@@ -8,7 +8,7 @@ conteúdo dos dois primeiros juntos (o conteúdo do primeiro seguido do conteúdo d
 int main()
 {
     int cont=0;
-    char linha[1000],nome1[100], nome2[100];;
+    char linha[1000],nome1[100], nome2[100];
     FILE *arq,*arq2,*arq3;
     printf("Digite o nome do arquivo que sera lido: ");
     scanf("%s", nome1);
