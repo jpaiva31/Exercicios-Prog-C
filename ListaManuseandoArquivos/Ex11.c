@@ -1,5 +1,5 @@
-/*Faça um programa no qual o usuário informa o nome do arquivo e uma palavra, e retorne o
-número de vezes que aquela palavra aparece no arquivo.
+/*FaÃ§a um programa no qual o usuÃ¡rio informa o nome do arquivo e uma palavra, e retorne o
+nÃºmero de vezes que aquela palavra aparece no arquivo.
 */
 
 #include <stdio.h>
@@ -19,32 +19,38 @@ int main()
     scanf("%s", nome2);
     arq = fopen(nome1, "r");
 
-    while(fgets(linha,1000,arq)!=0){
+    while(fgets(linha,1000,arq)!=0)
+    {
         char palavra[100];
-        for(int i=0;i<strlen(linha);i++){
-            if(i==0 || i!=0 && linha[i-1]!=' '){
+        for(int i=0; i<strlen(linha); i++)
+        {
+            if(i==0 || i!=0 && (linha[i-1]!=' '||linha[i-1]!='\n'))
+            {
                 int a=0;
-                while(linha[i]!=' '){
-                    printf("%c %c\n", linha[i],palavra[aux]);
-                    if(linha[i]==nome2[aux]){
-                        printf("a\n");
+                aux=0;
+                while(linha[i]!=' ' && linha[i]!='\n' && linha[i]!='\0' )
+                {
+                    if(linha[i]==nome2[aux])
+                    {
                         aux++;
+                        i++;
                     }
-                    else{
+                    else
+                    {
                         a=1;
                         break;
                     }
-                    if(a==0){
-                            cont++;
-                            printf(" aqui\n", linha[i],palavra[aux]);
-
-                    }
-                    else a=0;
                 }
+                if(a==0)
+                {
+                    cont++;
+                }
+                else a=0;
+
             }
         }
     }
-    printf("%d", cont);
+    printf("O arquivo tem %d vezes a palavra %s", cont, nome2);
     fclose(arq);
     return 0;
 }
